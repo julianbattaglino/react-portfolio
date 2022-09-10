@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+  Link,
+  BrowserRouter
+} from "react-router-dom";
 
-function App() {
+import Navbar from './components/Navbar/Navbar';
+import HomeComponent from './components/HomeComponent/HomeComponent';
+import Error404 from './components/Error404/Error404';
+
+
+// 1. import `ChakraProvider` component
+import { ChakraProvider } from '@chakra-ui/react'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ChakraProvider>
+      <BrowserRouter>
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<HomeComponent />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </BrowserRouter>
+    </ChakraProvider>
+  )
 }
 
 export default App;

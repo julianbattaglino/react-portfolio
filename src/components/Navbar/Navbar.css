@@ -1,0 +1,8 @@
+.header {
+    padding: 20px 75px;
+    position: fixed;
+}
+.menu-item {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
