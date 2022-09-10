@@ -7,7 +7,7 @@ const HomeComponent = () => {
 
     return (
         <>
-            <div className="title-container">
+            <div className="intro-container">
                 <h1 className="main-title">Julian Battaglino</h1>
                 <h2 className="subtitle">Front End Developer</h2>
                 <img className="profile-img" src="/img/profile-pic.png" alt="profile-img" />
