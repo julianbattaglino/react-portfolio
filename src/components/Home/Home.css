@@ -1,0 +1,61 @@
+.intro-container {
+    padding: 50px 75px;
+}
+.icon-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 50px;
+    color: rgb(58, 59, 59);
+}
+.main-title {
+    font-family: 'Chewy', cursive;
+    font-size: 72px;
+    background: linear-gradient(90deg, rgb(20, 110, 162) 25%, rgb(2,184,152) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitle {
+    font-family: 'Chewy', cursive;
+    font-size: 48px;
+    background: linear-gradient(90deg, rgb(20, 110, 162) 25%, rgb(2,184,152) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.grid-container {
+    padding: 75px 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .intro-container {
+        padding: 25px 25px;
+    }
+    .main-title {
+        font-size: 46px;
+        padding-top: 100px;
+    }
+    .subtitle {
+        font-size: 28px;
+    }
+    
+}
