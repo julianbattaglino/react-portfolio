@@ -26,6 +26,7 @@ const Navbar = () => {
     <div className="header">
       <Menu>
         <MenuButton
+          className='hamburguer-btn'
           as={IconButton}
           aria-label='Options'
           icon={<HamburgerIcon />}
@@ -37,12 +38,16 @@ const Navbar = () => {
             Inicio 
           </MenuItem>
           </Link>
+          <Link to="/about">
           <MenuItem className='menu-item'>
             Sobre Mi
           </MenuItem>
+          </Link>
+          <Link to="/proyectos">
           <MenuItem className='menu-item'>
             Proyectos
           </MenuItem>
+          </Link>
           <a onClick={onResumeClick} target = "_blank">
           <MenuItem className='menu-item'>
             CV

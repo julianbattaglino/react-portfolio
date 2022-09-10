@@ -1,6 +1,10 @@
 .header {
+    width: 100%;
     padding: 20px 75px;
-    position: fixed;
+}
+.hamburguer-btn {
+    border-color: rgb(192, 192, 192) !important;
+    border-radius: 50px !important;
 }
 
 .menu-item {
