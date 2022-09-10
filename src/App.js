@@ -9,7 +9,10 @@ import {
 } from "react-router-dom";
 
 import Navbar from './components/Navbar/Navbar';
-import HomeComponent from './components/HomeComponent/HomeComponent';
+import Home from './components/Home/Home';
+import AboutMe from './components/AboutMe/AboutMe';
+import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer';
 import Error404 from './components/Error404/Error404';
 
 
@@ -22,10 +25,14 @@ const App = () => {
       <BrowserRouter>
       <Navbar />
         <Routes>
-          <Route path="/" element={<HomeComponent />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/proyectos" element={<Projects />} />
           <Route path="*" element={<Error404 />} />
+
         </Routes>
       </BrowserRouter>
+      <Footer />
     </ChakraProvider>
   )
 }
