@@ -35,22 +35,22 @@ const Navbar = () => {
         <MenuList>
           <Link to="/">
           <MenuItem className='menu-item'>
-            Inicio 
+            Home 
           </MenuItem>
           </Link>
           <Link to="/about">
           <MenuItem className='menu-item'>
-            Sobre Mi
+            About me
           </MenuItem>
           </Link>
           <Link to="/proyectos">
           <MenuItem className='menu-item'>
-            Proyectos
+            Projects
           </MenuItem>
           </Link>
           <a onClick={onResumeClick} target = "_blank">
           <MenuItem className='menu-item'>
-            CV
+            Download resume
           </MenuItem>
           </a>
         </MenuList>
