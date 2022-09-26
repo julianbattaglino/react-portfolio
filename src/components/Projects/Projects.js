@@ -38,7 +38,7 @@ const Projects = () => {
 
             <Box>
               <Box as='span' color='gray.600' fontSize='sm'>
-                {project.location}
+                {project.description}
               </Box>
             </Box>
 
