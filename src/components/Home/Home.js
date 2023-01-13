@@ -33,7 +33,7 @@ const Home = () => {
                 <h2 className="subtitle"><span class="underline-nice">Tech Stack</span></h2>
                 <div className="icon-stack-container">
                     <img className="tech-icon" src="img/stack-icons/expo.png" alt="React Native, Expo CLI" />
-                    <img className="tech-icon" src="img/stack-icons/reactjs.png" alt="React.js" />
+                    <img className="tech-icon" src="img/stack-icons/react-js.png" alt="React.js" />
                     <img className="tech-icon" src="img/stack-icons/react-native.png" alt="React.js" />
                     <img className="tech-icon" src="img/stack-icons/js.png" alt="Vanilla js" />
                     <img className="tech-icon" src="img/stack-icons/node-js.png" alt="Node js" />
