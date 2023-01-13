@@ -44,11 +44,14 @@
 
 .icon-stack-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(75px,1fr));
     justify-content: center;
     align-items: center;
     padding-top: 50px;
     row-gap: 50px;
+    justify-items: center;
+    width: 75%;
+    margin: auto;
 }
 .tech-icon {
     height: auto;
@@ -67,7 +70,7 @@
         font-size: 28px;
     }
     .icon-stack-container {
-        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
     }
     
 }
@@ -77,6 +80,6 @@
         padding-top: 50px !important;
     }
     .icon-stack-container {
-        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
     }
 }
