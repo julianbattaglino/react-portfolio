@@ -16,7 +16,7 @@
 .main-title {
     font-family: 'Chewy', cursive;
     font-size: 72px;
-    background: linear-gradient(180deg, rgb(20, 110, 162) 25%, rgb(2,184,152) 75%);
+    background: linear-gradient(180deg, rgb(98, 104, 147, 1) 25%, rgb(98, 104, 147, 1) 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: flex;
@@ -26,7 +26,7 @@
 .subtitle {
     font-family: 'Chewy', cursive;
     font-size: 48px;
-    background: linear-gradient(180deg, rgb(20, 110, 162) 25%, rgb(2,184,152) 75%);
+    background: linear-gradient(180deg, rgb(98, 104, 147, 1) 25%, rgb(98, 104, 147, 1) 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: flex;
