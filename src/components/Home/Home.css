@@ -1,5 +1,5 @@
 .intro-container {
-    padding: 50px 75px;
+    padding: 0 75px;
 }
 .icon-container {
     margin-top: 15px;
@@ -33,6 +33,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .profile-img {
     width: 300px;
     height: 300px;
@@ -41,15 +42,41 @@
     margin-top: 50px;
 }
 
+.icon-stack-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    row-gap: 50px;
+}
+.tech-icon {
+    height: auto;
+    object-fit: cover;
+}
+
 @media (max-width: 768px) {
     .intro-container {
         padding: 25px 25px;
     }
     .main-title {
         font-size: 46px;
-        padding-top: 100px;
+        padding-top: 50px;
     }
     .subtitle {
         font-size: 28px;
+    }
+    .icon-stack-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media (min-width: 767px) and (max-width: 1200px){
+    .main-title {
+        padding-top: 50px !important;
+    }
+    .icon-stack-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
