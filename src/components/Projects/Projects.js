@@ -1,6 +1,8 @@
 import "./Projects.css";
 import { Box, Image, Link } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { SiGithub } from "react-icons/si";
+import { GrDeploy } from "react-icons/gr";
 import ProjectsMock from "../ProjectsMock/ProjectsMock";
 import React, { useState, useEffect } from "react";
 
@@ -36,16 +38,23 @@ const Projects = () => {
               {project.title}
             </Box>
 
-            <Box>
+            <Box className="pb-10 border-bottom">
               <Box as='span' color='gray.600' fontSize='sm'>
                 {project.description}
               </Box>
             </Box>
 
-            <Box>
+            <Box className="pd-10">
               <Link href={project.deployed} isExternal>
-                Project deploy <ExternalLinkIcon mx='2px' />
-              </Link>            </Box>
+              <GrDeploy className="inline" /> Project deploy 
+              </Link>
+            </Box>
+            <Box className="pd-5">
+              <Link href={project.repo} isExternal>
+              <SiGithub className="inline" /> Project repo 
+              </Link>
+            </Box>
+
 
 
           </Box>
