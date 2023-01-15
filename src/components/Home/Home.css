@@ -1,6 +1,11 @@
 .intro-container {
     padding: 0 75px;
 }
+
+.pt-100 {
+    padding-top: 100px;
+}
+
 .icon-container {
     margin-top: 15px;
     display: flex;

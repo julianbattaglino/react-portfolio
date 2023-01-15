@@ -1,8 +1,7 @@
 import "./Home.css";
-import { SiGithub, SiLinkedin, SiReact, SiHtml5, SiCss3, SiExpo } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { ImFilePdf } from "react-icons/im";
 import Pdf from '../../cv-julian-battaglino.pdf';
-import ContactUs from "../ContactUs/ContactUs";
 
 
 const Home = () => {
@@ -27,10 +26,13 @@ const Home = () => {
                     </a>
                     <ImFilePdf onClick={onResumeClick} size={30} className="icon" />
                 </div>
-                <img className="profile-img" src="/img/profile-pic.png" alt="profile-img" />
+                <img className="profile-img" src="/img/profile-pic-4.png" alt="profile-img" />
 
+            </div>
 
-                <h2 className="subtitle"><span class="underline-nice">Tech Stack</span></h2>
+            <div className="intro-container">
+
+                <h2 className="subtitle pt-100"><span class="underline-nice">Tech Stack</span></h2>
                 <div className="icon-stack-container">
                     <img className="tech-icon" src="img/stack-icons/expo.png" alt="React Native, Expo CLI" />
                     <img className="tech-icon" src="img/stack-icons/react-js.png" alt="React.js" />
@@ -42,9 +44,8 @@ const Home = () => {
                     <img className="tech-icon" src="img/stack-icons/css3.png" alt="Stylesheet Cascades - CSS3" />
                     <img className="tech-icon" src="img/stack-icons/sass.png" alt="Sass: Syntactically Awesome Style Sheets" />
                     <img className="tech-icon" src="img/stack-icons/chakra.png" alt="Chakra UI" />
-
-
                 </div>
+
 
             </div>
             {/* <ContactUs /> */}
