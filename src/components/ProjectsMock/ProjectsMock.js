@@ -46,7 +46,7 @@ const ProjectsMock = [
         category: 'React.js',
         description: 'CRA Webapp development',
         location: '',
-        image: '/img/portfolio/julianbattaglino-portfolio.webp',
+        image: '/img/portfolio/julianbattaglino-portfolio.png',
         deployed: 'https://react-portfolio-julian-battaglino.vercel.app/', 
         repo: 'https://github.com/julianbattaglino/react-portfolio',
     },
